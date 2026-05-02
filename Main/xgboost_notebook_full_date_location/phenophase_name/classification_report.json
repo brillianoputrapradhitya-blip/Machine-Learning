@@ -1,0 +1,57 @@
+{
+  "Dormancy": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 139.0
+  },
+  "Greenup": {
+    "precision": 0.993006993006993,
+    "recall": 1.0,
+    "f1-score": 0.9964912280701754,
+    "support": 142.0
+  },
+  "Maturity": {
+    "precision": 0.9851851851851852,
+    "recall": 0.9925373134328358,
+    "f1-score": 0.9888475836431226,
+    "support": 134.0
+  },
+  "MidGreenup": {
+    "precision": 1.0,
+    "recall": 0.9923664122137404,
+    "f1-score": 0.9961685823754789,
+    "support": 131.0
+  },
+  "MidSenescence": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 140.0
+  },
+  "Peak": {
+    "precision": 0.9836065573770492,
+    "recall": 0.975609756097561,
+    "f1-score": 0.9795918367346939,
+    "support": 123.0
+  },
+  "Senescence": {
+    "precision": 0.9923076923076923,
+    "recall": 0.9923076923076923,
+    "f1-score": 0.9923076923076923,
+    "support": 130.0
+  },
+  "accuracy": 0.9936102236421726,
+  "macro avg": {
+    "precision": 0.9934437754109886,
+    "recall": 0.99326016772169,
+    "f1-score": 0.9933438461615947,
+    "support": 939.0
+  },
+  "weighted avg": {
+    "precision": 0.9936159897541904,
+    "recall": 0.9936102236421726,
+    "f1-score": 0.9936051233266224,
+    "support": 939.0
+  }
+}

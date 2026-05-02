@@ -1,0 +1,29 @@
+Name,Type / Location,Description
+
+models/, Weights Directory,
+"Stores built-in model weights. Currently, these are the .joblib files required for Round 2 inference-only; they are loaded directly when the container runs and are not trained on the fly."
+
+.gitlab-ci.yml,Pipeline Configuration File,
+"GitLab submission pipeline configuration: pulls code, builds the image, pushes the image, and calls the platform API to create a zero2x task."
+Dockerfile,Image Build File,"Defines how the submission image is built. It mainly installs dependencies, copies code and models, and sets the working directory for the platform to start the container and run it."
+
+README.md,Project Documentation,
+"Used to describe the submission structure, how to run the project, or platform requirements."
+classification.py,Core Script,"Core baseline classification script, including two-stage model training/prediction logic: stage 1 predicts crop type, stage 2 predicts phenological stage; it also exports the .joblib model and per-row prediction results."
+
+extract_features.py,Feature Extraction Script,
+"Extracts features from the point table (/input/test_point.csv) and Sentinel-2 TIFFs (/input/region_test/*.tiff), maps latitude/longitude points to image pixels, and generates the tabular features required by the model."
+
+extract_meta.py,Metadata Extraction Script,
+"Scans TIFF images and extracts metadata, mainly organizing region, date, bands, geographic extent, and other information for subsequent feature extraction."
+inference.py,Inference Entry Script,"Official submission entry point. Detects the platform input structure, calls feature extraction, loads the weights under models/, and generates /output/result.json."
+
+requirements.txt,Dependency List,
+List of Python dependencies. Must be compatible with the model weights.
+
+result.json,Sample Output File,
+Used to illustrate the final result format.
+
+run.sh,Startup Script,
+"The actual script executed after the container starts, usually prints/scans the input first and then calls inference.py."
+scan_files.py,Debug Helper Script,"Used to traverse /input and print the files actually mounted by the platform, making it easier to troubleshoot input-structure issues."

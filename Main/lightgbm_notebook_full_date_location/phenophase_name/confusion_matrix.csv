@@ -1,0 +1,8 @@
+,Dormancy,Greenup,Maturity,MidGreenup,MidSenescence,Peak,Senescence
+Dormancy,139,0,0,0,0,0,0
+Greenup,0,142,0,0,0,0,0
+Maturity,0,0,133,0,0,1,0
+MidGreenup,0,1,0,130,0,0,0
+MidSenescence,0,0,0,0,140,0,0
+Peak,0,0,2,0,0,120,1
+Senescence,0,0,0,0,2,1,127

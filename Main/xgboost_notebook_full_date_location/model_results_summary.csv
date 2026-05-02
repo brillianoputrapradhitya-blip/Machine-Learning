@@ -1,0 +1,3 @@
+target,model,test_macro_f1,test_weighted_f1,test_accuracy,best_val_macro_f1,classes
+phenophase_name,xgboost_optuna,0.9933438461615947,0.9936051233266224,0.9936102236421726,0.99722371967655,"Dormancy, Greenup, Maturity, MidGreenup, MidSenescence, Peak, Senescence"
+crop_type,xgboost_optuna,0.9865456367615995,0.9882942453090449,0.9882854100106496,0.9806880171221257,"corn, rice, soybean"

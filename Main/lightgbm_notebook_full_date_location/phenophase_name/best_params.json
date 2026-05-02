@@ -1,0 +1,17 @@
+{
+  "boosting_type": "dart",
+  "n_estimators": 1707,
+  "learning_rate": 0.051271499007195756,
+  "num_leaves": 83,
+  "max_depth": 6,
+  "min_child_samples": 67,
+  "subsample": 0.9959102239722796,
+  "subsample_freq": 2,
+  "colsample_bytree": 0.8499410376884735,
+  "reg_alpha": 0.00019821075029436729,
+  "reg_lambda": 0.3332082387313631,
+  "min_split_gain": 0.24572656394671957,
+  "max_bin": 246,
+  "drop_rate": 0.1118884990658506,
+  "skip_drop": 0.47806651407951567
+}
